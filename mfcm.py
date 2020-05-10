@@ -1,4 +1,3 @@
-# FCM算法
 import copy
 import math
 import random
@@ -197,9 +196,9 @@ def checker_wine(final_location):
     right = 0.0
     for k in range(0, 3):
         checker = [0, 0, 0]
-        for i in range(0, 50):
+        for i in range(0, 59):
             for j in range(0, len(final_location[0])):
-                if final_location[i + (50*k)][j] == 1:
+                if final_location[i + (59*k)][j] == 1:
                     checker[j] += 1
         right += max(checker)
     print("正确聚类的数量：" + str(right))
